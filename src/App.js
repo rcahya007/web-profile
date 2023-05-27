@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import PageOne from "./pages/PageOne";
+import PageThree from "./pages/PageThree";
+import PageTwo from "./pages/PageTwo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="scrroll h-screen w-full snap-y snap-mandatory overflow-x-hidden scroll-smooth ">
+      <PageOne />
+      <PageTwo />
+      <PageThree />
     </div>
   );
 }
